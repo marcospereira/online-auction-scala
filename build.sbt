@@ -174,7 +174,7 @@ lazy val webGateway = (project in file("web-gateway"))
       "org.webjars" % "foundation-icon-fonts" % "d596a3cfb3"
     ),
     EclipseKeys.preTasks := Seq(compile in Compile),
-    httpIngressPaths := Seq("/")
+    rpHttpIngressPaths := Seq("/")
   )
 
 def commonSettings: Seq[Setting[_]] = Seq(
